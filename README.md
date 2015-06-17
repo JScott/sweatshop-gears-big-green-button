@@ -5,3 +5,8 @@ This tool exists to provide a web interface to kick off Robot Sweatshop jobs. Wh
 ## Usage
 
 Run this script with the argument of the port number you want to bind to. It defaults to 8081
+
+## Future
+
+- Make the button big
+- Make the button green
