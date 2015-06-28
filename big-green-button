@@ -4,11 +4,11 @@ require 'sinatra'
 require 'erubis'
 
 configure do
-  set :port, ARGV[0] || 8081
+  set :port, ARGV[0] || 8080
   set :bind, configatron.http_bind
 end
 
-get '/' do
+get '/big-green-button' do
   html = File.read "#{__dir__}/index.html"
   eruby = Erubis::Eruby.new html
   jobs = `sweatshop job-list`.split "\n"
